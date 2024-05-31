@@ -179,7 +179,7 @@ nav ul li a.button:hover, nav ul li a.button:focus {
 /*newly added for centering team member on phone*/
 @media (max-width: 600px) {
     .team-member {
-        width: 90%; /* Sets the width to 90% of its parent container to allow some margin */
+        width: 100%; /* Sets the width to 90% of its parent container to allow some margin */
         margin: 0 auto; /* Adds automatic margin to both sides to center the container */
         padding: 15px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
