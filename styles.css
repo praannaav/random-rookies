@@ -191,7 +191,7 @@ nav ul li a.button:hover, nav ul li a.button:focus {
         width: 100%;
         align-items: center; /* Ensure that the navigation links are also centered */
     }
-
+}
 .center-image {
     display: block; /* Makes the image a block element */
     margin: 0 auto; /* Automatically calculates equal margins on both sides */
