@@ -176,7 +176,27 @@ nav ul li a.button:hover, nav ul li a.button:focus {
     }
 }
 
+/*newly added for centering team member on phone*/
+@media (max-width: 600px) {
+    .team-member {
+        width: 100%; /* Full width for smaller screens to utilize available space */
+        display: flex; /* Ensure it uses flexbox */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align all content inside the card */
+        justify-content: center; /* Center the items vertically within each card */
+    }
 
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center; /* Ensure that the navigation links are also centered */
+    }
+
+    header nav ul li a {
+        width: 90%; /* Adjust width to not span the full width, giving some margin */
+        padding: 10px 20px; /* Adjust padding as needed */
+    }
+}
 .center-image {
     display: block; /* Makes the image a block element */
     margin: 0 auto; /* Automatically calculates equal margins on both sides */
