@@ -192,11 +192,6 @@ nav ul li a.button:hover, nav ul li a.button:focus {
         align-items: center; /* Ensure that the navigation links are also centered */
     }
 
-    header nav ul li a {
-        width: 90%; /* Adjust width to not span the full width, giving some margin */
-        padding: 10px 20px; /* Adjust padding as needed */
-    }
-}
 .center-image {
     display: block; /* Makes the image a block element */
     margin: 0 auto; /* Automatically calculates equal margins on both sides */
