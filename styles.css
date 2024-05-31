@@ -145,22 +145,25 @@ nav ul li a.button:hover, nav ul li a.button:focus {
     color: #4CAF50;
 }
 
-@media (max-width: 800px) {
-    .team-member {
-        width: 100%; /* Full width for smaller screens */
-    }
-}
-@media (max-width: 600px) {
-    footer img {
-        width: 80px; /* Smaller width for smaller screens */
-    }
-}
-
 @media (max-width: 600px) {
     header nav ul {
         flex-direction: column;
         width: 100%; /* Ensures each link expands full width */
+        align-items: center; /* Centers the links */
     }
+
+    header nav ul li {
+        width: 100%; /* Full width for each link */
+        margin-bottom: 15px; /* Increases space between stacked links */
+    }
+
+    header nav ul li a {
+        width: 90%; /* Slightly less than full width for aesthetic padding */
+        text-align: center; /* Center align the text */
+        padding: 12px 20px; /* Increases padding for better touch target size */
+    }
+}
+
 
     header nav ul li {
         width: 100%; /* Full width for each link */
