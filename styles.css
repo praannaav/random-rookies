@@ -1,0 +1,169 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+    background-color: white;
+    color: #4CAF50;
+    outline: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex; /* Ensure it's set to handle flex items */
+    flex-wrap: wrap; /* Allow multiple rows as needed */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 800px; /* Adjust if needed */
+    margin: auto; /* Centers the container */
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+footer {
+    text-align: center; /* Center align the content */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+}
+
+footer img {
+    width: 150px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+   /* margin-top: 10px;  Add some space above the image */
+}
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Specific styles for About Us page */
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;  /* Ensure margin allows for tight packing */
+    padding: 15px;
+    text-align: center;
+    width: calc(43% - 0px); /* Calculates the width to fit 2 items per row minus margin */
+    display: flex;  /* Flex to center align content within the card */
+    flex-direction: column;  /* Stack content vertically */
+    align-items: center;  /* Center align all content inside the card */
+}
+
+.team-member img {
+    width: 100px;  /* Consistent size */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.team-member h3, .team-member p {
+    width: 100%;  /* Full width to maintain alignment */
+    text-align: center;  /* Center text */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* Social media icons layout */
+.team-member .social-media {
+    margin-top: 0px;
+    display: flex;  /* Flexbox to center icons horizontally */
+    justify-content: center;  /* Center align icons */
+}
+
+/* Styling for social media icons */
+.team-member .social-media a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.team-member .social-media img {
+    width: 24px;  /* Adjust icon size as needed */
+}
+
+/* Enhancing navigation button styles for consistency */
+nav ul li a.button {
+    background-color: transparent;  /* Ensures transparency */
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.button:hover, nav ul li a.button:focus {
+    background-color: white;
+    color: #4CAF50;
+}
+
+@media (max-width: 800px) {
+    .team-member {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+@media (max-width: 600px) {
+    footer img {
+        width: 80px; /* Smaller width for smaller screens */
+    }
+}
+
+
+.center-image {
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Automatically calculates equal margins on both sides */
+    width: 80%; /* Adjust width as necessary, can be less or more */
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.section-class {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 30px; /* Adjust as needed */
+}
